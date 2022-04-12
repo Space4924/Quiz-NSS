@@ -36,13 +36,13 @@ export default function Ques() {
 		<div className='component'>
 			{showScore ? (
 				<div className='score-section'>
-					You scored {score} out of {data.length}
+					You scored <div className="red">{score}</div> out of {data.length}
 				</div>
 			) : (
 				<>
 					<div className='question-section'>
 						<div className='question-count'>
-						<p style={{ textAlign: "center" }}>  Time: {Time}sec</p>
+						<p style={{ textAlign: "center" , fontSize:"20px"}}>  Time: {Time}sec</p>
 							<span>Question {currentQuestion + 1}</span>/{data.length}
 						</div>
 						<div className='question-text'>{data[currentQuestion].question}</div>

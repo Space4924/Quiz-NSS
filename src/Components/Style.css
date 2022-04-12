@@ -1,20 +1,33 @@
-
-*{
-    background-color: lightcyan; 
-     margin: 5px;
-
+.Photo {
+  margin: 50px;
+  width: 800px;
+  height: 850px;
+}
+.heading{
+  margin: 50px 0 20px 80px;
 }
 
-  .cult{
-      text-align: center;
-     
-   background-color:lightblue;
-   /* display: inline; */
-   position: absolute;
-   top: 20vh;
-   right:30vh;
-   width: 50vh;
-   height: 60vh; 
-   
+.mainnet {
 
- } 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 30px;
+}
+
+.sub {
+  margin: 50px;
+  width: 800px;
+  height: 850px;
+}
+.Form{
+  background-color: red;
+  position: relative;
+  top: 20vh;
+  left: 35vw;
+  width: 700px;
+  height: auto;
+  margin: 50px;
+  padding: 40px;
+
+}

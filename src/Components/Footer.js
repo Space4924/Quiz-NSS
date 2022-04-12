@@ -4,7 +4,7 @@ import React from 'react'
 const Footer = () => {
    let Bottom={
            position:"absolute",
-           top:"160vh"
+           top:"120vh"
     }
     return (
         <>

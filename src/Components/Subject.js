@@ -1,17 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import './Style.css'
 const Subject = () => {
-    let Subject = {
-        position: "Absolute",
-        display: "inline-block",
-        left: "10vh",
-        margin: "30px",
-        width: "60vh",
-        top: "20vh"
-    }
     return (
-        <div style={Subject}>
+        <div className='sub'>
             <div class="accordion shadow p-3 mb-5 bg-body rounded" id="accordiFourxample">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">
@@ -31,10 +23,7 @@ const Subject = () => {
                             Each subject consisting <b>20 question</b> <br />
                             All are <b>Single Choice Type</b> question  which are alloted
                             <br /> <b>4 marks</b> for each question
-
-
                             <br /> <br />
-
                             <input type="Checkbox" /> Accept all the condition
                             <hr />
                             <button ><Link to="/Form">GO</Link>
@@ -55,12 +44,8 @@ const Subject = () => {
                             All are <b>Single Choice Type</b> question  which are alloted
                             <br /> <b>4 marks</b> for each question
                             <br /><br />
-
-
-
                             <input type="Checkbox" />  Accept all the condition
                             <hr />
-
                             <button>
                                 <Link to="/Form">GO</Link>
                             </button>
@@ -81,9 +66,7 @@ const Subject = () => {
                             <br /> <b>4 marks</b> for each question
                             <br /><br />
                             <input type="Checkbox" />  Accept all the condition
-
                             <hr />
-
                             <button><Link to="/Form">GO</Link></button>
                         </div>
                     </div>
@@ -92,7 +75,6 @@ const Subject = () => {
                     <h2 class="accordion-header" id="headingThree">
                         <button class="accordion-button shadow p-3 mb-5 bg-body rounded collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                             <b>MATHMATICS</b>
-
                         </button>
                     </h2>
                     <div id="collapseThree" class="accordion-collapse text-center collapse" aria-labelledby="headingThree" data-bs-parent="#accordiFourxample">
@@ -101,19 +83,14 @@ const Subject = () => {
                             There will be only <b>20 questions</b> in this test <br />
                             All are <b>Single Choice Type</b> question  which are alloted
                             <br /> <b>4 marks</b> for each question
-
-
                             <br /> <br />
-
                             <input type="Checkbox" /> Accept all the condition
                             <hr />
                             <button ><Link to="/Form">GO</Link></button>
                         </div>
                     </div>
                 </div>
-
             </div>
-
         </div>
     )
 }

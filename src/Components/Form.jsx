@@ -1,22 +1,8 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
+import './Style.css'
 
 const Form = () => {
-  let stool = {
-    margin: "20px",
-    display: "inline",
-    width: "70vh",
-    height: "60vh",
-    position: "absolute",
-    left: "60vh",
-    top: "25vh",
-  }
-  let button={
-    color:"white",
-    backgroundColor:"lightblue", 
-    textDecoration:"None",
-
-  }
   let [value, setvalue] = useState({
     name: "",
     batch: "",
@@ -56,7 +42,7 @@ const Form = () => {
     })
   }
   return (<>
-    <div style={stool} class="shadow-lg p-3 mb-20 bg-body rounded">
+    <div class="Form shadow-lg  mb-20 bg-body rounded">
       <form method="POST">
         <div class="row g-2">
           <div class="col-md">
@@ -90,10 +76,10 @@ const Form = () => {
           <input type="checkbox" autoComplete="off" className="form-check-input" id="exampleCheck1" />
           <label className="form-check-label" onChange={Store} for="exampleCheck1">Check me out</label>
         </div>
-         <button type="submit"  onClick={Click} className="btn " style={button}> <Link to='./Ques'>SUBMIT</Link></button>
+         <button className="button" type="submit"  onClick={Click} > <Link to='./Ques'>SUBMIT</Link></button>
       </form>
     </div>
-    <div className="result">
+    {/* <div className="result">
       <ul>
         <li>
           name:{value.name}
@@ -107,7 +93,7 @@ const Form = () => {
           college:{value.college}
         </li>
       </ul>
-    </div>
+    </div> */}
   </>)
 }
 export default Form
